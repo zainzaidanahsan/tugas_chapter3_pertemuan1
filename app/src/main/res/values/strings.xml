@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">tugas_chapter3_pertemuan1</string>
+    <string name="umur">Umur</string>
+    <string name="input_umur">input umur</string>
+    <string name="input_tinggi_badan">input tinggi badan</string>
+    <string name="tinggi_badan">Tinggi Badan</string>
+    <string name="berat_badan">Berat Badan</string>
+    <string name="input_berat_badan">berat badan</string>
+    <string name="kalkulator_bmi">Kalkulator BMI</string>
+    <string name="hasil">Hasil</string>
+    <string name="umur_anda">Umur Anda:</string>
+    <string name="tinggi_anda">Tinggi Anda:</string>
+    <string name="berat_anda">Berat Anda:</string>
+    <string name="kategori">Kategori:</string>
+    <string name="bmi_anda">BMI Anda:</string>
+</resources>

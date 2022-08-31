@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/input_umur"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <TextView
+        android:id="@+id/umur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/umur"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumber"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <TextView
+        android:id="@+id/tinggiBadan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:text="@string/tinggi_badan"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/umur"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Input berat badan"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/beratBadan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_berat_badan"
+        android:text="@string/berat_badan"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinggiBadan"
+        app:layout_constraintVertical_bias="0.141" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/input_tinggi_badan"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <TextView
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:id="@+id/tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kalkulator_bmi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/txtinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tinggi_anda"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <TextView
+        android:id="@+id/Hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hasil"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+    <TextView
+        android:id="@+id/txtumur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/umur_anda"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <TextView
+        android:id="@+id/txtKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kategori"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="587dp" />
+
+    <TextView
+        android:id="@+id/txtBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bmi_anda"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <TextView
+        android:id="@+id/txtBB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/berat_anda"
+        android:textColor="@color/black"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="532dp" />
+
+    <TextView
+        android:id="@+id/hasilUmur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <TextView
+        android:id="@+id/hasilTinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <TextView
+        android:id="@+id/hasilBerat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="532dp" />
+
+    <TextView
+        android:id="@+id/hasilBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <TextView
+        android:id="@+id/hasilKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="587dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
